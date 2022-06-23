@@ -1,0 +1,33 @@
+@import "../_constants";
+
+#page-login{
+    background-color: lightblue;
+
+    &-header{
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: $GlobalHeaderHeight;
+        color: $GlobalHeaderColor;
+        background-color: $GlobalHeaderBackgroundColor;
+    }
+
+    &-header .title{
+        line-height: $GlobalHeaderHeight;
+        font-weight: 100;
+        font-size: 32px;
+        padding-left: 20px;
+
+    }
+
+    &-area{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: $GlobalHeaderHeight;
+        bottom: 0;
+        background-color: lightgray;
+    }
+}

@@ -1,0 +1,52 @@
+@import "../_constants";
+
+#page-map{
+    background-color: lightblue;
+
+    &-header{
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: $GlobalHeaderHeight;
+        color: $GlobalHeaderColor;
+        background-color: $GlobalHeaderBackgroundColor;
+    }
+
+    &-header .title{
+        line-height: $GlobalHeaderHeight;
+        font-weight: 100;
+        font-size: 32px;
+        padding-left: 20px;
+
+    }
+
+    &-settings-dropdown{
+        margin: 16px 24px 0 auto;
+    }
+
+    &-settings-button{
+        background-image: url(../images/gear.svg);
+        width: 48px;
+        height: 48px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+    }
+
+    &-area{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: $GlobalHeaderHeight;
+        bottom: 0;
+        background-color: lightgray;
+    }
+
+    &-area .area{
+        position: relative;
+        width: 100%;
+        height: 100%; 
+    }
+}
