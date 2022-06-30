@@ -48,7 +48,7 @@ plugins.push( new MiniCssExtractPlugin({
 module.exports = {
   // devtool: false,  bei dev ganze zeile auskommentieren
   entry: {
-    main: path.resolve(__dirname, './src/index.ts'),
+    main: path.resolve(__dirname, './src/main.ts'),
   },
   output: {
     path: path.resolve(__dirname, './dist-dev'), // bei dev dist-dev eintragen
@@ -89,13 +89,9 @@ module.exports = {
       maxInitialRequests: Infinity,
       minSize: 0,
       cacheGroups: {
-        encodeVendor: {
-          test: /[\\/]node_modules[\\/](buffer|ieee754|bs58|base-x|base64-js|lz-string)[\\/]/,
-          name: "encode"
-        },
-        encryptVendor: {
-          test: /[\\/]node_modules[\\/](jsencrypt)[\\/]/,
-          name: "encrypt"
+        leafletVendor: {
+          test: /[\\/]node_modules[\\/](leaflet)[\\/]/,
+          name: "leaflet"
         },
         bootstrapVendor: {
           test: /[\\/]node_modules[\\/](bootstrap|@popperjs)[\\/]/,

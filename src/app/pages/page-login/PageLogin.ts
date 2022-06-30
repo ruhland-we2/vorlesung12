@@ -4,7 +4,7 @@ import {Page} from '../../lib/Page';
 const page_login_markup = `
 <div id="page-login" class="page">
     <div id="page-login-header">
-        <div class="title">Vorlesung06 Login, SCSS, Bootstrap</div>
+        <div class="title">Vorlesung 12, webpack mit TypeScript und SCSS</div>
     </div>
     <div id="page-login-area">
         <div id="page-login-form" class="container p-5">

@@ -2,10 +2,12 @@ import './page-map.scss';
 import {Page} from '../../lib/Page';
 import * as L from 'leaflet';
 
+import 'leaflet/dist/leaflet.css';
+
 const page_map_markup = `
 <div id="page-map" class="page">
     <div id="page-map-header">
-        <div class="title">Vorlesung03 Map und SCSS</div>
+        <div class="title">Vorlesung 12, webpack mit TypeScript und SCSS</div>
         <div class="settings-button"></div>
 
         <div id="page-map-settings-dropdown">

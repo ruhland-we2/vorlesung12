@@ -3,6 +3,7 @@
         "noImplicitAny": false,
         "target": "ES5",
         "module": "esnext",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "sourceMap": true
     }
 }
